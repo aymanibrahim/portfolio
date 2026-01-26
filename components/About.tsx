@@ -26,12 +26,8 @@ const About: React.FC = () => {
           {/* Profile Image & Intro */}
           <div className="lg:w-1/3 flex flex-col items-center text-center lg:items-start lg:text-left">
              <FadeIn direction="right">
-                <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl mb-8 mx-auto lg:mx-0 bg-slate-200 dark:bg-slate-700 relative">
-                  <img 
-                    src="./ayman-ibrahim.jpeg" 
-                    alt="Ayman Ibrahim" 
-                    className="w-full h-full object-cover"
-                  />
+                <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl mb-8 mx-auto lg:mx-0 bg-slate-200 dark:bg-slate-700 relative">                 
+                  <img src="/portfolio/ayman-ibrahim.jpeg" alt="Ayman Ibrahim" className="w-full h-full object-cover"/>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 </div>
                 
