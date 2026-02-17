@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SectionHeading from './ui/SectionHeading';
 import FadeIn from './ui/FadeIn';
-import { Mail, Linkedin, Github, MapPin, Send } from 'lucide-react';
+import { Mail, Linkedin, Github, MapPin, Send, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -11,15 +11,55 @@ const Contact: React.FC = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const ACCESS_KEY = "7d0b79a2-00b1-45aa-b9c4-988a5c5d034b"; 
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    alert("Thank you for your message! I'll get back to you within 24 hours.");
-    setFormData({ name: '', email: '', type: 'Consulting', message: '' });
+    setIsSubmitting(true);
+    setStatus('idle');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: ACCESS_KEY,
+          name: formData.name,
+          email: formData.email,
+          subject: `New Portfolio Inquiry: ${formData.type}`,
+          message: `Name: ${formData.name}\nEmail: ${formData.email}\nType: ${formData.type}\n\nMessage:\n${formData.message}`,
+          botcheck: false, // Hidden field to prevent spam
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus('success');
+        setFormData({ name: '', email: '', type: 'Consulting', message: '' });
+      } else {
+        setStatus('error');
+        setErrorMessage(result.message || 'Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      setStatus('error');
+      setErrorMessage('Failed to connect to the server. Please check your internet connection.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    if (status !== 'idle') setStatus('idle'); // Reset status when user starts typing again
   };
 
   return (
@@ -98,7 +138,8 @@ const Contact: React.FC = () => {
                                     value={formData.name}
                                     onChange={handleChange}
                                     required
-                                    className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 dark:focus:ring-primary-900 outline-none transition-all dark:text-white"
+                                    disabled={isSubmitting}
+                                    className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 dark:focus:ring-primary-900 outline-none transition-all dark:text-white disabled:opacity-50 disabled:cursor-not-allowed"
                                     placeholder="Your Name"
                                 />
                             </div>
@@ -111,7 +152,8 @@ const Contact: React.FC = () => {
                                     value={formData.email}
                                     onChange={handleChange}
                                     required
-                                    className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 dark:focus:ring-primary-900 outline-none transition-all dark:text-white"
+                                    disabled={isSubmitting}
+                                    className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 dark:focus:ring-primary-900 outline-none transition-all dark:text-white disabled:opacity-50 disabled:cursor-not-allowed"
                                     placeholder="your@email.com"
                                 />
                             </div>
@@ -124,7 +166,8 @@ const Contact: React.FC = () => {
                                 name="type" 
                                 value={formData.type}
                                 onChange={handleChange}
-                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 dark:focus:ring-primary-900 outline-none transition-all dark:text-white"
+                                disabled={isSubmitting}
+                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 dark:focus:ring-primary-900 outline-none transition-all dark:text-white disabled:opacity-50 disabled:cursor-not-allowed"
                             >
                                 <option>Consulting</option>
                                 <option>Full Project</option>
@@ -142,10 +185,25 @@ const Contact: React.FC = () => {
                                 value={formData.message}
                                 onChange={handleChange}
                                 required
-                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 dark:focus:ring-primary-900 outline-none transition-all dark:text-white resize-none"
+                                disabled={isSubmitting}
+                                className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 dark:focus:ring-primary-900 outline-none transition-all dark:text-white resize-none disabled:opacity-50 disabled:cursor-not-allowed"
                                 placeholder="Tell me about your project or data challenges..."
                             ></textarea>
                         </div>
+
+                        {status === 'success' && (
+                            <div className="p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg flex items-center gap-3 text-green-700 dark:text-green-400">
+                                <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                                <p className="text-sm font-medium">Message sent successfully! I'll get back to you soon.</p>
+                            </div>
+                        )}
+
+                        {status === 'error' && (
+                            <div className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg flex items-center gap-3 text-red-700 dark:text-red-400">
+                                <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                                <p className="text-sm font-medium">{errorMessage}</p>
+                            </div>
+                        )}
 
                         <div className="flex items-center justify-between pt-2">
                              <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -153,10 +211,24 @@ const Contact: React.FC = () => {
                              </p>
                              <button 
                                 type="submit"
-                                className="px-8 py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all flex items-center gap-2"
+                                disabled={isSubmitting || status === 'success'}
+                                className={`px-8 py-3 rounded-lg font-semibold shadow-md transition-all flex items-center gap-2 ${
+                                    isSubmitting || status === 'success'
+                                    ? 'bg-slate-300 dark:bg-slate-700 text-slate-500 dark:text-slate-400 cursor-not-allowed' 
+                                    : 'bg-primary-600 hover:bg-primary-700 hover:shadow-lg text-white'
+                                }`}
                              >
-                                <Send className="w-4 h-4" />
-                                Send Message
+                                {isSubmitting ? (
+                                    <>
+                                        <Loader2 className="w-4 h-4 animate-spin" />
+                                        Sending...
+                                    </>
+                                ) : (
+                                    <>
+                                        <Send className="w-4 h-4" />
+                                        Send Message
+                                    </>
+                                )}
                              </button>
                         </div>
                     </form>
