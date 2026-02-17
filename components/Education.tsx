@@ -45,14 +45,13 @@ const Education: React.FC = () => {
               </h3>
               
               <div className="flex flex-wrap gap-3">
-                 {[
-                   "AWS Certified Data Analytics – Specialty (2022)",
-                   "AWS Certified Cloud Practitioner (2023)",
+                 {[                   
                    "Google Advanced Data Analytics Professional (2025)",
                    "IBM Data Engineering Professional (2025)",
                    "Huawei Cloud Certified Developer Associate (2025)",
-                   "Data Engineering Nanodegree | Udacity (2022)",
-                   "Data Engineering Bootcamp | DataExpert (2025)"
+                   "Data Engineering Bootcamp | DataExpert (2025)",
+                   "AWS Certified Cloud Practitioner (2023)",
+                   "AWS Certified Data Analytics – Specialty (2022)"
                  ].map((cert, idx) => (
                    <span key={idx} className="px-4 py-2 bg-slate-50 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-sm font-medium rounded-lg border border-slate-200 dark:border-slate-700 hover:border-secondary-400 transition-colors cursor-default">
                      {cert}
