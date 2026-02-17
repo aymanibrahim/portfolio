@@ -14,9 +14,12 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10 text-center">       
         
         <FadeIn delay={200}>
-          <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-2 tracking-tight leading-tight">
             Ayman Ibrahim
           </h1>
+          <h2 className="text-2xl md:text-4xl font-semibold text-primary-600 dark:text-primary-400 mb-6 font-heading">
+            Data Engineer
+          </h2>
         </FadeIn>
 
         <FadeIn delay={300}>
