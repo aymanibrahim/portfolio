@@ -10,6 +10,7 @@ import Services from './components/Services';
 import Education from './components/Education';
 import Achievements from './components/Achievements';
 import WhyMe from './components/WhyMe';
+import FreelanceProfiles from './components/FreelanceProfiles';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -28,6 +29,7 @@ const App: React.FC = () => {
         <Education />
         <Achievements />
         <WhyMe />
+        <FreelanceProfiles />
         <Contact />
       </main>
       <Footer />
