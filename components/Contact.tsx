@@ -84,35 +84,35 @@ const Contact: React.FC = () => {
                             <div className="w-10 h-10 bg-primary-50 dark:bg-slate-800 rounded-full flex items-center justify-center mr-4">
                                 <Mail className="w-5 h-5 text-primary-500" />
                             </div>
-                            <span>ayman.blended@gmail.com</span>
+                            <span>Send email</span>
                         </a>
                         
                          <a href="https://linkedin.com/in/aymanibrahim" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                             <div className="w-10 h-10 bg-primary-50 dark:bg-slate-800 rounded-full flex items-center justify-center mr-4">
                                 <Linkedin className="w-5 h-5 text-primary-500" />
                             </div>
-                            <span>linkedin.com/in/aymanibrahim</span>
+                            <span>Linkedin</span>
                         </a>
 
                         <a href="https://github.com/aymanibrahim" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                             <div className="w-10 h-10 bg-primary-50 dark:bg-slate-800 rounded-full flex items-center justify-center mr-4">
                                 <Github className="w-5 h-5 text-primary-500" />
                             </div>
-                            <span>github.com/aymanibrahim</span>
+                            <span>Github</span>
                         </a>
 
-                        <a href="https://wa.me/201000000000" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                        <a href="https://wa.me/201017529625" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                             <div className="w-10 h-10 bg-primary-50 dark:bg-slate-800 rounded-full flex items-center justify-center mr-4">
                                 <Phone className="w-5 h-5 text-primary-500" />
                             </div>
-                            <span>Connect on WhatsApp</span>
+                            <span>WhatsApp</span>
                         </a>
 
-                        <a href="https://t.me/aymanibrahim" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                        <a href="https://t.me/ayman_ibrahim" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                             <div className="w-10 h-10 bg-primary-50 dark:bg-slate-800 rounded-full flex items-center justify-center mr-4">
                                 <MessageCircle className="w-5 h-5 text-primary-500" />
                             </div>
-                            <span>Connect on Telegram</span>
+                            <span>Telegram</span>
                         </a>
 
                          <div className="flex items-center text-slate-600 dark:text-slate-300">
