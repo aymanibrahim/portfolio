@@ -46,9 +46,10 @@ const Education: React.FC = () => {
               
               <div className="flex flex-wrap gap-3">
                  {[                   
-                   "Google Advanced Data Analytics Professional (2025)",
-                   "IBM Data Engineering Professional (2025)",
-                   "Huawei Cloud Certified Developer Associate (2025)",
+                   "Google Project Management (2025)",
+                   "Google Advanced Data Analytics (2025)",
+                   "IBM Data Engineering (2025)",
+                   "Huawei Cloud Certified Developer Associate - Big Data (2025)",
                    "Data Engineering Bootcamp | DataExpert (2025)",
                    "AWS Certified Cloud Practitioner (2023)",
                    "AWS Certified Data Analytics – Specialty (2022)"
