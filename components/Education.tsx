@@ -50,7 +50,7 @@ const Education: React.FC = () => {
                    "Google Advanced Data Analytics (2025)",
                    "IBM Data Engineering (2025)",
                    "Huawei Cloud Certified Developer Associate - Big Data (2025)",
-                   "Data Engineering Bootcamp | DataExpert (2025)",
+                   "DataExpert Data Engineering Bootcamp (2025)",
                    "AWS Certified Cloud Practitioner (2023)",
                    "AWS Certified Data Analytics – Specialty (2022)"
                  ].map((cert, idx) => (
