@@ -119,7 +119,7 @@ const Contact: React.FC = () => {
                             <div className="w-10 h-10 bg-primary-50 dark:bg-slate-800 rounded-full flex items-center justify-center mr-4">
                                 <MapPin className="w-5 h-5 text-primary-500" />
                             </div>
-                            <span>Alexandria, Egypt (Remote Global)</span>
+                            <span>Alexandria, Egypt (Remote)</span>
                         </div>
                     </div>
 
