@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SectionHeading from './ui/SectionHeading';
 import FadeIn from './ui/FadeIn';
-import { Mail, Linkedin, Github, MapPin, Send, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, Linkedin, Github, MapPin, Send, Loader2, CheckCircle, AlertCircle, Phone, MessageCircle } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
-  const ACCESS_KEY = "7d0b79a2-00b1-45aa-b9c4-988a5c5d034b"; 
+  const ACCESS_KEY = "7d0b79a2-00b1-45aa-b9c4-988a5c5d034b";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -99,6 +99,20 @@ const Contact: React.FC = () => {
                                 <Github className="w-5 h-5 text-primary-500" />
                             </div>
                             <span>github.com/aymanibrahim</span>
+                        </a>
+
+                        <a href="https://wa.me/201000000000" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                            <div className="w-10 h-10 bg-primary-50 dark:bg-slate-800 rounded-full flex items-center justify-center mr-4">
+                                <Phone className="w-5 h-5 text-primary-500" />
+                            </div>
+                            <span>Connect on WhatsApp</span>
+                        </a>
+
+                        <a href="https://t.me/aymanibrahim" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                            <div className="w-10 h-10 bg-primary-50 dark:bg-slate-800 rounded-full flex items-center justify-center mr-4">
+                                <MessageCircle className="w-5 h-5 text-primary-500" />
+                            </div>
+                            <span>Connect on Telegram</span>
                         </a>
 
                          <div className="flex items-center text-slate-600 dark:text-slate-300">
