@@ -6,18 +6,18 @@ import { ExperienceItem } from '../types';
 
 const experiences: ExperienceItem[] = [
   {
-    role: "Huawei Big Data Engineer | DEPI",
-    company: "Huawei",
-    period: "Nov 2024 - Present",
-    description: "Specializing in Python automation, advanced SQL, and Spark/Hive optimization for enterprise-scale data infrastructure.",
-    type: 'current'
-  },
-  {
     role: "Data Engineer",
     company: "Freelance (Upwork)",
     period: "Jul 2019 - Present",
     description: "Designing cloud data warehouses, optimizing PySpark jobs, orchestrating pipelines with Airflow, and implementing data quality frameworks for diverse international clients.",
     type: 'current'
+  },	
+  {
+    role: "Huawei Big Data Engineer | DEPI",
+    company: "Huawei",
+    period: "Dec 2025 - May 2026",
+    description: "Specializing in Python automation, advanced SQL, and Spark/Hive optimization for enterprise-scale data infrastructure.",
+    type: 'past'
   },
   {
     role: "Data Analytics Trainer",
