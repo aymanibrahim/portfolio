@@ -6,6 +6,14 @@ import { Project } from '../types';
 
 const projects: Project[] = [
   {
+    title: "Telecom AI-Enhanced Data Pipeline for Customer Churn Prediction",
+    challenge: "Churn models focus solely on billing data, ignoring critical network quality factors and infrastructure data silos.",
+    solution: "Built pipeline integrating infrastructure and behavioral data using GeoPandas geospatial enrichment, LightGBM modeling, and Airflow orchestration.",
+    techStack: ["Apache Airflow", "GeoPandas", "LightGBM", "Flask", "Streamlit", "Python"],
+    impact: "Delivered an enriched 32-feature dataset, a calibrated ML model with SHAP explainability, and a dashboard mapping geographical churn risk.",
+    githubLink: "https://github.com/nhahub/NHA-4-025"
+  },
+  {
     title: "E-Commerce Analytics Platform",
     challenge: "Transactional data locked in MySQL, product catalog in MongoDB, no unified reporting.",
     solution: "Built centralized data warehouse with Airflow orchestration, Spark processing, and Tableau dashboards.",
@@ -20,14 +28,6 @@ const projects: Project[] = [
     techStack: ["Apache Airflow", "Python", "PostgreSQL"],
     impact: "Zero manual intervention, full transparency, proactive issue detection.",
     githubLink: "https://github.com/aymanibrahim/data-pipeline-airflow"
-  },
-  {
-    title: "Data Warehouse with Amazon Redshift",
-    challenge: "Growing data volume, slow queries, need for cloud scalability.",
-    solution: "Redshift cluster with star schema, distribution keys, query optimization.",
-    techStack: ["Amazon Redshift", "AWS S3", "Python", "SQL"],
-    impact: "100x faster queries, seamless TB-scale data processing.",
-    githubLink: "https://github.com/aymanibrahim/data-warehouse-redshift"
   }
 ];
 
