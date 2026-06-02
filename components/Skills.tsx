@@ -5,9 +5,9 @@ import FadeIn from './ui/FadeIn';
 const Skills: React.FC = () => {
   const skillCategories = [
     {
-      title: "Data Engineering Fundamentals",
+      title: "Data Engineering",
       skills: [
-        "Data Modeling (OLTP → OLAP)",
+        "Data Modeling (OLTP, OLAP)",
         "ETL/ELT Pipeline Architecture",
         "Data Validation & Quality Frameworks",
         "Data Warehousing & Lake Design",
@@ -17,9 +17,9 @@ const Skills: React.FC = () => {
     {
       title: "Cloud & Big Data",
       skills: [
-        "AWS (Glue, Redshift, S3, Athena, EMR)",
+        "AWS (Glue, Redshift, EMR)",
         "Huawei Cloud",
-        "Apache Spark (PySpark)",
+        "PySpark",
         "Hadoop, Hive, HBase",
         "Apache Airflow"
       ]
@@ -29,8 +29,8 @@ const Skills: React.FC = () => {
       skills: [
         "Languages: Python, SQL",
         "Databases: PostgreSQL, MySQL, MongoDB",
-        "Analytics: Tableau, BI Tools",
-        "DevOps: Docker, Containers"
+        "Analytics: Tableau",
+        "Containers: Docker"
       ]
     }
   ];
