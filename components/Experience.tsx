@@ -88,10 +88,7 @@ const Experience: React.FC = () => {
                     <div className="w-2 h-2 rounded-full bg-green-500"></div>
                     <span className="text-sm text-slate-700 dark:text-slate-200 font-medium">Enabled scalable analytics infrastructure</span>
                   </div>
-               </div>
-               <p className="mt-6 text-sm text-slate-500 dark:text-slate-400 italic">
-                 Note: Leveraging 20+ years of engineering background in project management.
-               </p>
+               </div>               
             </div>
           </FadeIn>
         </div>
