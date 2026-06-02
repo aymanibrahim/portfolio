@@ -117,7 +117,7 @@ const Achievements: React.FC = () => {
 
               <blockquote className="flex-1">
                 <p className="text-slate-700 dark:text-slate-300 text-lg italic leading-relaxed mb-6">
-                  "Mr. Ayman is a dedicated and professional engineer with a
+                  "Ayman is a dedicated and professional engineer with a
                   wide array of certificates and skills, specifically in data
                   engineering and data analytics. I, without hesitation,
                   recommend Mr. Ayman to anyone who wants to do business with
