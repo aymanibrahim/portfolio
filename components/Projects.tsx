@@ -6,11 +6,11 @@ import { Project } from '../types';
 
 const projects: Project[] = [
   {
-    title: "Telecom AI-Enhanced Data Pipeline for Customer Churn Prediction",
-    challenge: "Churn models focus solely on billing data, ignoring critical network quality factors and infrastructure data silos.",
-    solution: "Built pipeline integrating infrastructure and behavioral data using GeoPandas geospatial enrichment, LightGBM modeling, and Airflow orchestration.",
+    title: "Telecom Customer Churn Prediction",
+    challenge: "Churn models focus solely on billing data, ignoring network quality factors and infrastructure data silos.",
+    solution: "Built pipeline integrating infrastructure and behavioral data with geospatial enrichment and ML modeling.",
     techStack: ["Apache Airflow", "GeoPandas", "LightGBM", "Flask", "Streamlit", "Python"],
-    impact: "Delivered an enriched 32-feature dataset, a calibrated ML model with SHAP explainability, and a dashboard mapping geographical churn risk.",
+    impact: "Delivered an enriched dataset, calibrated explainable ML model, and a dashboard mapping geographical churn risk.",
     githubLink: "https://github.com/nhahub/NHA-4-025"
   },
   {
