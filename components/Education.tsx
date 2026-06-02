@@ -31,7 +31,7 @@ const Education: React.FC = () => {
                     <span className="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-slate-300 dark:bg-slate-600 border-2 border-white dark:border-slate-900"></span>
                     <h4 className="text-lg font-bold text-slate-800 dark:text-slate-200">Bachelor's in Civil Engineering</h4>
                     <p className="text-primary-600 dark:text-primary-400 font-medium">Alexandria University</p>
-                    <p className="text-slate-500 dark:text-slate-400 text-sm">1993 - 1999</p>
+                    <p className="text-slate-500 dark:text-slate-400 text-sm">1994 - 1999</p>
                 </div>
               </div>
             </div>
