@@ -23,7 +23,7 @@ const experiences: ExperienceItem[] = [
     role: "Data Analytics Trainer",
     company: "Various Institutions",
     period: "2019 - Present",
-    description: "Training professionals in data analytics and engineering concepts. Previously Programming Instructor at NASS Academy (2023).",
+    description: "Training professionals in data analytics and engineering concepts.",
     type: 'past'
   }
 ];
