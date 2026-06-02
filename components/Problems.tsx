@@ -22,7 +22,7 @@ const problems: ProblemSolution[] = [
   },
   {
     problem: "No Single Source of Truth",
-    solution: "One reliable data warehouse",
+    solution: "One reliable unified data platform",
     icon: Target
   }
 ];
