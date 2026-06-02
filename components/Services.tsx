@@ -7,12 +7,12 @@ import { ServiceItem } from '../types';
 const services: ServiceItem[] = [
   {
     title: "Data Infrastructure & Architecture",
-    points: ["Analytics platform design", "Cloud data architecture (AWS)", "Legacy system migration"],
+    points: ["Analytics platform design", "Cloud data architecture", "Legacy system migration"],
     icon: Server
   },
   {
     title: "Data Integration & Pipelines",
-    points: ["ETL/ELT implementation", "Multi-source integration", "Workflow automation (Airflow)"],
+    points: ["ETL/ELT implementation", "Multi-source integration", "Workflow automation"],
     icon: Share2
   },
   {
