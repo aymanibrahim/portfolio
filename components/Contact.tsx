@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
         <FadeIn>
           <SectionHeading 
             title="Let's Build Something Great Together" 
-            subtitle="Ready to Transform Your Data Infrastructure?"
+            subtitle="Ready to Transform Your Data?"
           />
         </FadeIn>
 
