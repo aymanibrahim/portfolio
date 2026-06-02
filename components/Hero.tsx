@@ -24,13 +24,13 @@ const Hero: React.FC = () => {
 
         <FadeIn delay={300}>
           <p className="text-xl md:text-3xl text-slate-700 dark:text-slate-300 font-light mb-8 max-w-4xl mx-auto">
-            Transforming fragmented data into <span className="text-primary-600 dark:text-primary-400 font-semibold">trusted insights</span>
+            Transforming fragmented data into <span className="text-primary-600 dark:text-primary-400 font-semibold">trusted pipelines</span>
           </p>
         </FadeIn>
 
         <FadeIn delay={400}>
           <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto">
-            Building scalable data platforms that empower businesses to make decisions.
+            I build data systems that turn infrastructure into business decisions.
           </p>
         </FadeIn>
 
