@@ -35,7 +35,7 @@ const About: React.FC = () => {
                   Ayman Ibrahim
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                  A freelance Data Engineer with 5+ years of experience designing end-to-end data platforms. My unique journey from Civil Engineering to Data Engineering brings analytical rigor and systems thinking to every data challenge.
+                  A freelance Data Engineer with 6+ years of experience designing end-to-end data platforms. My unique journey from Civil Engineering to Data Engineering brings analytical rigor and systems thinking to every data challenge.
                 </p>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                   I help startups and growing businesses eliminate data chaos—centralizing scattered sources, automating manual workflows, and building reliable infrastructure that turns raw data into strategic advantage.
