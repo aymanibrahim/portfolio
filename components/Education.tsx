@@ -46,6 +46,7 @@ const Education: React.FC = () => {
               
               <div className="flex flex-wrap gap-3">
                  {[                   
+                   "Cloudera Modern Big Data Analysis with SQL(2026)",
                    "Google Project Management (2025)",
                    "Google Advanced Data Analytics (2025)",
                    "IBM Data Engineering (2025)",
