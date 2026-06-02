@@ -9,14 +9,14 @@ const experiences: ExperienceItem[] = [
     role: "Data Engineer",
     company: "Freelance (Upwork)",
     period: "Jul 2019 - Present",
-    description: "Designing cloud data warehouses, optimizing PySpark jobs, orchestrating pipelines with Airflow, and implementing data quality frameworks for diverse international clients.",
+    description: "Designing cloud data warehouses, optimizing PySpark jobs, orchestrating pipelines with Airflow, and implementing data quality frameworks for diverse clients.",
     type: 'current'
   },	
   {
-    role: "Huawei Big Data Engineer | DEPI",
-    company: "Huawei",
+    role: "Huawei Big Data Engineer | Intern",
+    company: "DEPI",
     period: "Dec 2025 - May 2026",
-    description: "Specializing in Python automation, advanced SQL, and Spark/Hive optimization for enterprise-scale data infrastructure.",
+    description: "Specializing in Python automation, advanced SQL, and Spark/Hive optimization for large-scale data infrastructure.",
     type: 'past'
   },
   {
