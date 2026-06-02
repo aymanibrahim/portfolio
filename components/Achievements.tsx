@@ -49,7 +49,7 @@ const Achievements: React.FC = () => {
 
                   <blockquote>
                     <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed italic">
-                      "Eng. Ayman is highly professional and knowledgeable in
+                      "Ayman is highly professional and knowledgeable in
                       Python Data Analysis. Communication was excellent,
                       delivery was on time, and the quality of work exceeded
                       expectations. I strongly recommend working with him and
@@ -63,14 +63,9 @@ const Achievements: React.FC = () => {
                       <div className="flex items-center gap-2 text-primary-600">
                         <User className="w-4 h-4" />
                         <span className="font-semibold">
-                          Alaa Mohamed
+                          Ghanem Mohamed
                         </span>
-                      </div>
-
-                      <div className="flex items-center gap-1 text-slate-500 text-sm">
-                        <Clock className="w-4 h-4" />
-                        <span>5 months ago</span>
-                      </div>
+                      </div>                      
 
                       <div className="flex items-center gap-1 text-slate-500 text-sm">
                         <Calendar className="w-4 h-4" />
@@ -143,10 +138,7 @@ const Achievements: React.FC = () => {
                   <p className="text-xs text-slate-500 dark:text-slate-400">
                     Data Steward and Quality Analyst | D&C | Oil & Gas
                   </p>
-
-                  <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
-                    January 16, 2023 • Client
-                  </p>
+                  
                 </div>
               </div>
             </div>
