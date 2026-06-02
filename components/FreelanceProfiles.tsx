@@ -27,6 +27,15 @@ const platforms = [
     icon: <Briefcase className="w-8 h-8" />
   },
   {
+    name: 'Nafezly',
+    url: 'https://nafezly.com/u/aymaniawad',
+    description: 'Connecting top professionals in the Arab world.',
+    color: 'text-[#10b981]',
+    bgColor: 'bg-[#10b981]',
+    borderColor: 'hover:border-[#10b981]',
+    icon: <Briefcase className="w-8 h-8" />
+  },
+  {
     name: 'Khamsat',
     url: 'https://khamsat.com/user/aymaniawad',
     description: 'Marketplace for micro-services and quick consultations.',
