@@ -94,7 +94,7 @@ const Projects: React.FC = () => {
         <div className="text-center">
             <FadeIn delay={400}>
               <a href="https://github.com/aymanibrahim" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-slate-900 dark:bg-slate-700 hover:bg-slate-800 dark:hover:bg-slate-600 rounded-full transition-colors">
-                View All 30+ Projects on GitHub <Github className="w-4 h-4 ml-2"/>
+                View All Projects on GitHub <Github className="w-4 h-4 ml-2"/>
               </a>
             </FadeIn>
         </div>
